@@ -1,0 +1,21 @@
+.emergency-sec{
+    margin-top: -130px;
+}
+hr{
+    padding: 2px;
+
+}
+.line{
+    width: 18%;
+}
+.submit:hover{
+background-color: #0d6efd !important;
+border: none !important;
+}
+.border-radius-start{
+    border-radius: 10px 0 0 10px;
+}
+
+.border-radius-end{
+    border-radius: 0 10px 10px 0;
+}

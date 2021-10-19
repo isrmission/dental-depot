@@ -1,0 +1,56 @@
+[
+    {
+        "id": "1",
+        "name": "Teeth Cleaning",
+        "sDetails": "When plaque (the gooey yellow stuff you get on your teeth) accumulates and is there for a while it combines…",
+        "img": "./images/services/img-1.png"
+    },
+    {
+        "id": "2",
+        "name": "Dental Fillings",
+        "sDetails": "Cavities in teeth are caused by demineralization of the teeth which is caused by a combination of bacteria…",
+        "img": "./images/services/img-2.png"
+    },
+    {
+        "id": "3",
+        "name": "Teeth Braces",
+        "sDetails": "Don’t worry about irregular teeth. You will smile again confidently with straight teeth.",
+        "img": "./images/services/img-3.png"
+    },
+    {
+        "id": "4",
+        "name": "Implants",
+        "sDetails": "Years of experience! Specialist care. You will be able to chew properly again!",
+        "img": "./images/services/img-4.png"
+    },
+    {
+        "id": "5",
+        "name": "Whitening",
+        "sDetails": "Rejuvenate your smile with brighter, white teeth !",
+        "img": "./images/services/img-5.png"
+    },
+    {
+        "id": "6",
+        "name": "Painless injection",
+        "sDetails": "Only Dental Clinic in Bangladesh utilising Painless Injection System. You will be amazed!",
+        "img": "./images/services/img-6.png"
+    },
+    {
+        "id": "7",
+        "name": "Root Canal Treatment",
+        "sDetails": "No more 3-5 days for Root Canal Treatment. We are offering single appointment Root Canal Treatment !",
+        "img": ".images/services/img-7.png"
+    },
+    {
+        "id": "8",
+        "name": "Laser Technology",
+        "sDetails": "Worlds most advanced Diode Laser. Your treatment experience will be relaxing & smooth.",
+        "img": "./images/services/img-8.png"
+    },
+    {
+        "id": "9",
+        "name": "3D Dental Scanner",
+        "sDetails": "World’s most advanced 3D Dental Scanner & only one in Bangladesh!",
+        "img": "./images/services/img-9.png"
+    }
+]

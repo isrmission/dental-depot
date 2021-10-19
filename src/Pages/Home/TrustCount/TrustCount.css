@@ -1,0 +1,11 @@
+.bg{
+    background-image: url(/src/images/map.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-color: #464646;
+}
+.fas{
+    font-size: 60px;
+}
