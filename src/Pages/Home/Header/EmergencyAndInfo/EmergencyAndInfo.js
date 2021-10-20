@@ -11,9 +11,7 @@ const EmergencyAndInfo = () => {
                         <div>
                             <h2 className="fs-1 fw-bold mb-3">Emergency?</h2>
                             <h4>Please Call Us at</h4>
-                            <p className="bg-white line mx-auto my-4">
-                                <hr />
-                            </p>
+                            <hr className="bg-white text-white line mx-auto my-4" />
                             <h2>+880-1701-000-000</h2>
                         </div>
                     </Col>

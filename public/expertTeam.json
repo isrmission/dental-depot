@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Dr. Mahabub Hasan",
+    "experties": "Teeth Braces",
+    "img": "./images/doctors/team1.png"
+  },
+  {
+    "name": "Dr. Zarif Rahman",
+    "experties": "Implants",
+    "img": "./images/doctors/team2.png"
+  },
+  {
+    "name": "Habibur Rahman",
+    "experties": "Dental Filling",
+    "img": "./images/doctors/team3.png"
+  },
+  {
+    "name": "Dr. Hasib Rahman",
+    "experties": "Root Canel Treatment",
+    "img": "./images/doctors/team4.png"
+  },
+  {
+    "name": "Dr. Sahana Parvin",
+    "experties": "3D Dental Scanner",
+    "img": "./images/doctors/team5.png"
+  },
+  {
+    "name": "Farzana Islam",
+    "experties": "Laser Technology",
+    "img": "./images/doctors/team6.png"
+  }
+]

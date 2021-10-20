@@ -1,35 +1,47 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation, useHistory } from 'react-router-dom';
 import useAuth from '../../../hooks/useAuth/useAuth';
 import './Login.css';
 
 const Login = () => {
 
-    const { signInUsingGoogle, creatAccountWithEmail } = useAuth();
-
+    const { signInUsingGoogle, signInUsingEmail } = useAuth();
     const [Email, setEmail] = useState('');
     const [Password, setPassword] = useState('');
     const [error, setError] = useState('');
+    const location = useLocation();
+    const history = useHistory();
+
+    const handleGoogleLogin = () => {
+        signInUsingGoogle()
+            .then(result => {
+                // setUser(result.user);
+                history.push(location.state?.from || '/home');
+            })
+    }
     const handleEmailChange = e => {
         setEmail(e.target.value);
     }
     const handlePasswordChange = e => {
         setPassword(e.target.value);
     }
-    const handleRegistration = e => {
+    const handleLogin = e => {
         e.preventDefault();
         if (Password.length < 6) {
             setError('Password should at least 6 characters.');
             return;
         }
-        creatAccountWithEmail(Email, Password);
+        signInUsingEmail(Email, Password)
+            .then(result => {
+                history.push(location.state?.from || '/home');
+            })
         setError('');
     }
     return (
         <div className="bg-secondary bg-opacity-25 py-5 mt-0">
-            <br /><br />
+            <br />
             <h3 className="fw-bold fs-2">
-                Please Register
+                Please Login
             </h3>
             <br />
             <form className="py-3 w-25 mx-auto border border-1 border-secondary rounded-3">
@@ -48,8 +60,8 @@ const Login = () => {
                         {error}
                     </p>
                 </div>
-                <button onClick={handleRegistration} type="submit" className="btn btn-primary rounded-pill my-2 px-4">Sign In</button>
-                <p>
+                <button onClick={handleLogin} type="submit" className="btn btn-primary rounded-pill mb-2 px-4">Login</button>
+                <p className="mt-4">
                     Not Registered?
                     <Link to='/signup'>
                         <button className="ms-1 btn btn-secondary btn-sm">
@@ -61,7 +73,7 @@ const Login = () => {
             <p className="fw-bold mb-1 mt-3 fs-4">
                 Sign In Instead!
             </p>
-            <button onClick={signInUsingGoogle} type="submit" className="btn rounded-pill px-4 border border-2 py-0 pb-1 border-white google"><i className="fab fa-google text-danger ps-1"></i><span className="fs-5 text-success">oo<span className="text-danger">g</span>le</span></button>
+            <button onClick={handleGoogleLogin} type="submit" className="btn rounded-pill px-4 border border-2 py-0 pb-1 border-white google"><i className="fab fa-google p-0 text-danger bg-transparent ps-1"></i><span className="fs-5 ps-0 text-success">oo<span className="text-danger">g</span>le</span></button>
         </div >
     );
 };

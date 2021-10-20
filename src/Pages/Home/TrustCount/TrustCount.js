@@ -29,7 +29,7 @@ const TrustCount = () => {
                         <div className="d-flex align-items-center justify-content-center">
                             <div>
                                 <h1>
-                                    <i class="fas fa-user-md"></i>
+                                    <i className="fas fa-user-md"></i>
                                 </h1>
                             </div>
                             <div className="ms-3 text-start">
@@ -44,7 +44,7 @@ const TrustCount = () => {
                         <div className="d-flex align-items-center justify-content-center">
                             <div>
                                 <h1>
-                                    <i class="fas fa-award"></i>
+                                    <i className="fas fa-award"></i>
                                 </h1>
                             </div>
                             <div className="ms-3 text-start">
